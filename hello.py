@@ -1,8 +1,3 @@
-import os
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route('/')
-def hello():
-    return 'Hello to the World!'
+#!flask/bin/python
+from app import app
+app.run(debug = True)
